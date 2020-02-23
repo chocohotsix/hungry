@@ -1,12 +1,15 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>안녕하세요 여기서 글자를 세세요!</h1>
+    <h1 id="hi">안녕하세요 여기서 글자를 세세요!</h1>
     <a href="{% url 'about' %}">ABOUT</a>
     <!-- action부분에서 제출할곳 작성 -->
     <form action="{% url 'result' %}">
